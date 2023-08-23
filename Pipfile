@@ -8,6 +8,9 @@ django = "*"
 
 [dev-packages]
 pytest = "*"
+pytest-django = "*"
+black = "*"
+pytest-black = "*"
 
 [requires]
 python_version = "3.11"

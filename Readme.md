@@ -31,4 +31,4 @@ As a system tests must cover critical user cases.
 
 As a system word counter implementation must support English and Portuguese languages.
 
-As a system word counter implementation must not count special character and numbers as a word.
+As a system word counter implementation must not count special character, numbers and unicode symbols as a word.

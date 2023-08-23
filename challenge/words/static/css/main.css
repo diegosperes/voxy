@@ -1,0 +1,14 @@
+header {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #e4e2e2;
+}
+
+.form-input-submit {
+    margin-top: 1rem;
+}
+
+.highlight {
+    background-color: #cc945f;
+    padding: 0.15rem;
+}
