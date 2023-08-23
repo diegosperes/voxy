@@ -21,5 +21,20 @@ def test_has_alpha_character(character: str, expected: bool):
 
 
 def test_get_alpha_words():
-    text = "  Tonight @peres ! Drink \"cachaça\" and throw your 2 hands up ↑ in the sky!  "
-    assert find_alpha_words_indexes(text.split()) == {0, 1, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14}
+    text = (
+        '  Tonight @peres ! Drink "cachaça" and throw your 2 hands up ↑ in the sky!  '
+    )
+    assert find_alpha_words_indexes(text.split()) == {
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        14,
+    }

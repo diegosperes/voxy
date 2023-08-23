@@ -6,11 +6,9 @@ from words.domain.alpha_words import find_alpha_words_indexes
 
 
 class AlphaWordsView(View):
-
     async def get(self, request):
         form = AlphaWordForm()
         return render(request, "alpha-words-form.html", {"form": form})
-
 
     async def post(self, request):
         form = AlphaWordForm(request.POST)

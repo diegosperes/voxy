@@ -20,6 +20,6 @@ from django.urls import path
 from words.views import AlphaWordsView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('words/alpha/', AlphaWordsView.as_view(), name='alpha-words-form'),
+    path("admin/", admin.site.urls),
+    path("words/alpha/", AlphaWordsView.as_view(), name="alpha-words-form"),
 ]

@@ -32,3 +32,5 @@ As a system tests must cover critical user cases.
 As a system word counter implementation must support English and Portuguese languages.
 
 As a system word counter implementation must not count special character, numbers and unicode symbols as a word.
+
+As a user when the outcome of alpha words returns I see the same text submited highlighting the alpha words.
