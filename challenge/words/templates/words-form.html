@@ -2,11 +2,11 @@
 
 {% block content %}
     <div class="container">
-        <p class="col">The application will identify every alpha word in the content, highlight it, and display the total number of alpha words found after the submission.</p>
+        <p class="col">The application will identify every valid words in the content, highlight it, and display the total after the submission.</p>
         <form class="col" id="form-alpha-words" action="{% url 'words-form' %}" method="post">
             {% csrf_token %}
             {{ form }}
-            <input type="submit" class="form-input-submit float-right" value="Submit" onclick="trimText()">
+            <input type="submit" class="form-input-submit float-right" value="Submit">
         </form>
     </div>
 {% endblock %}

@@ -10,10 +10,10 @@ class WordsFormTestCase(TestCase):
         self.assertEqual(response.status_code, HTTPStatus.OK)
 
     def test_post_form(self):
-        response = self.client.post("/words/", data={"text": "on top of the world!"})
+        response = self.client.post("/words/", data={"text": "on top of the world"})
         self.assertEqual(response.status_code, HTTPStatus.OK)
 
     def test_post_form_return_words_total(self):
-        response = self.client.post("/words/", data={"text": "on top of the world!"})
+        response = self.client.post("/words/", data={"text": "on top of the world"})
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertContains(response, "Total of words: 5")

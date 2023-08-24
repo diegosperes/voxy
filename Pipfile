@@ -11,6 +11,7 @@ pytest = "*"
 pytest-django = "*"
 black = "*"
 pytest-black = "*"
+pytest-benchmark = "*"
 
 [requires]
 python_version = "3.11"

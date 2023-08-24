@@ -29,8 +29,14 @@ As an engineer when I look at your project then I should understand how to insta
 
 As a system tests must cover critical user cases.
 
-As a system word counter implementation must support English and Portuguese languages.
+As a system word counter implementation must support English language.
 
-As a system word counter implementation must not count special character, numbers and unicode symbols as a word only if has any alpha character.
+As a system word counter implementation must not count special character, numbers and unicode symbols as a word.
 
-As a user when the outcome of words returns I see the same text submited highlighting the words.
+As a system word counter implementation must count word ending with punctuation as valid word.
+
+As a system word counter implementation must count word between double-quote, grave, and rounded parentheses as valid word.
+
+As a system word counter implementation must count word contraction as single word.
+
+As a user when the outcome of words returns I see the same text submited highlighting the valid words.
