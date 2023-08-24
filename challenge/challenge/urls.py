@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from words.views import AlphaWordsView
+from words.views import WordsView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("words/alpha/", AlphaWordsView.as_view(), name="alpha-words-form"),
+    path("words/", WordsView.as_view(), name="words-form"),
 ]

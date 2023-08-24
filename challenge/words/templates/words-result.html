@@ -2,10 +2,10 @@
 
 {% block content %}
     <section class="container">
-        <p>Total of alpha words: {{ alpha_words|length }}<p>
+        <p>Total of words: {{ words|length }}<p>
         <p>
             {% for word in text %}
-                <span class="{% if forloop.counter0 in alpha_words %} highlight {% endif %}">{{ word }}</span>
+                <span class="{% if forloop.counter0 in words %} highlight {% endif %}">{{ word }}</span>
             {% endfor %}
         </p>
     </section>
