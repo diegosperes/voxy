@@ -12,6 +12,8 @@ Pipenv was chosen to ensure consistency across multiple environments.
 ~$ docker-compose up
 ```
 
+After the initialization of docker container open your browser and type `localhost:8000/words` 
+
 ### Tests
 
 Tests run inside docker container using the following command.
