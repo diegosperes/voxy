@@ -70,7 +70,7 @@ class WordStateMachine:
         return current_state is not None and current_state.final
 
 
-def find_words_indexes(text: List[str], language: EnglishLanguage) -> Set[int]:
+def find_word_indexes(text: List[str], language: EnglishLanguage) -> Set[int]:
     """Find the words with at least one alpha character."""
     machine = WordStateMachine()
     return {

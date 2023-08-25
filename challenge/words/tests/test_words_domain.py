@@ -1,6 +1,6 @@
 import pytest
 
-from words.domain.words import find_words_indexes, WordStateMachine, EnglishLanguage
+from words.domain.words import find_word_indexes, WordStateMachine, EnglishLanguage
 
 
 @pytest.mark.parametrize(
@@ -40,13 +40,13 @@ def test_word_state_machine(character: str, expected: bool):
     assert machine.validate(character, EnglishLanguage) == expected
 
 
-def test_find_words_indexeswords():
+def test_find_word_indexeswords():
     expected = {0, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14}
     text = "Tonight @peres ! Drink cachaça and throw your 2 hands up ↑ in the sky!"
-    assert find_words_indexes(text.split(), EnglishLanguage) == expected
+    assert find_word_indexes(text.split(), EnglishLanguage) == expected
 
 
-def test_find_words_indexeswords_benchmark(benchmark):
+def test_find_word_indexeswords_benchmark(benchmark):
     text = "Tonight @peres ! Drink cachaça and throw your 2 hands up ↑ in the sky!"
-    word_indexes = benchmark(find_words_indexes, text.split(), EnglishLanguage)
+    word_indexes = benchmark(find_word_indexes, text.split(), EnglishLanguage)
     assert len(word_indexes) == 11
